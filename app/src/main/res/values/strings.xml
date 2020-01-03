@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FagmentosAndroid</string>
+    <string name="txtBttnPrnPrimos">Números Primos</string>
+    <string name="txtBttnPrnPaises">Países</string>
+    <string name="txtBttnPrnMascotas">Mascotas</string>
+    <string name="txtBttnPrnFlores">Flores</string>
 </resources>

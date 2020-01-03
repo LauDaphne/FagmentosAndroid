@@ -1,31 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/antivityPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="94dp"
-        android:background="@mipmap/ic_launcher"
-        android:text="Button" />
+    android:background="@color/colorFondoPrincipal"
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="259dp"
-        android:layout_height="213dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="105dp"
-        android:src="@drawable/imgprincipal"
-        app:srcCompat="@drawable/imagen" />
+        android:id="@+id/imagenPrincipal"
+        android:layout_width="350dp"
+        android:layout_height="291dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/principal" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/bttnPrimo"
+        style="@style/Botones"
+        android:drawableTop="@drawable/botonprimo"
+        android:text="@string/txtBttnPrnPrimos"
+        app:layout_constraintBottom_toTopOf="@+id/bttnDesplazarImagenes"
+        app:layout_constraintEnd_toStartOf="@+id/bttnPaises"
+        app:layout_constraintStart_toStartOf="@+id/imagenPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/imagenPrincipal" />
+
+    <Button
+        android:id="@+id/bttnPaises"
+        style="@style/Botones"
+        android:drawableTop="@drawable/botonpaises"
+        android:text="@string/txtBttnPrnPaises"
+        app:layout_constraintBottom_toTopOf="@+id/bttnElegirImagen"
+        app:layout_constraintEnd_toEndOf="@+id/imagenPrincipal"
+        app:layout_constraintStart_toEndOf="@+id/bttnPrimo"
+        app:layout_constraintTop_toTopOf="@+id/bttnPrimo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bttnDesplazarImagenes"
+        style="@style/Botones"
+        android:drawableTop="@drawable/pets"
+        android:text="@string/txtBttnPrnMascotas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bttnPrimo"
+        app:layout_constraintStart_toStartOf="@+id/bttnPrimo"
+        app:layout_constraintTop_toBottomOf="@+id/bttnPrimo" />
+
+    <Button
+        android:id="@+id/bttnElegirImagen"
+        style="@style/Botones"
+        android:drawableTop="@drawable/flower"
+        android:text="@string/txtBttnPrnFlores"
+        app:layout_constraintBottom_toBottomOf="@+id/bttnDesplazarImagenes"
+        app:layout_constraintEnd_toEndOf="@+id/bttnPaises"
+        app:layout_constraintStart_toStartOf="@+id/bttnPaises"
+        app:layout_constraintTop_toTopOf="@+id/bttnDesplazarImagenes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
