@@ -6,10 +6,22 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
     </style>
-    <style name="Botones" parent="AppTheme">
+    <style name="BotonesIniciales" parent="AppTheme">
         <item name="android:layout_width">@dimen/anchoboton</item>
         <item name="android:layout_height">@dimen/altoboton</item>
         <item name="android:backgroundTint">@color/colorFondoBttn</item>
     </style>
+    <style name="Titulos" parent="AppTheme">
+        <item name="android:textSize">@dimen/sizeTitulo</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="FragmentoLista" parent="AppTheme">
+        <item name="android:layout_height">@dimen/altoFragList</item>
+        <item name="android:layout_width">@dimen/anchoFragList</item>
+    </style>
+
 </resources>

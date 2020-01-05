@@ -22,18 +22,19 @@
 
     <Button
         android:id="@+id/bttnPrimo"
-        style="@style/Botones"
+        android:onClick="iniciarActivityPrimos"
+        style="@style/BotonesIniciales"
         android:drawableTop="@drawable/botonprimo"
         android:text="@string/txtBttnPrnPrimos"
-        app:layout_constraintBottom_toTopOf="@+id/bttnDesplazarImagenes"
         app:layout_constraintEnd_toStartOf="@+id/bttnPaises"
         app:layout_constraintStart_toStartOf="@+id/imagenPrincipal"
         app:layout_constraintTop_toBottomOf="@+id/imagenPrincipal" />
 
     <Button
         android:id="@+id/bttnPaises"
-        style="@style/Botones"
-        android:drawableTop="@drawable/botonpaises"
+        style="@style/BotonesIniciales"
+        android:onClick="iniciarActivityPaises"
+        android:drawableTop="@drawable/ic_botonpaises"
         android:text="@string/txtBttnPrnPaises"
         app:layout_constraintBottom_toTopOf="@+id/bttnElegirImagen"
         app:layout_constraintEnd_toEndOf="@+id/imagenPrincipal"
@@ -43,7 +44,7 @@
 
     <Button
         android:id="@+id/bttnDesplazarImagenes"
-        style="@style/Botones"
+        style="@style/BotonesIniciales"
         android:drawableTop="@drawable/pets"
         android:text="@string/txtBttnPrnMascotas"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +54,7 @@
 
     <Button
         android:id="@+id/bttnElegirImagen"
-        style="@style/Botones"
+        style="@style/BotonesIniciales"
         android:drawableTop="@drawable/flower"
         android:text="@string/txtBttnPrnFlores"
         app:layout_constraintBottom_toBottomOf="@+id/bttnDesplazarImagenes"

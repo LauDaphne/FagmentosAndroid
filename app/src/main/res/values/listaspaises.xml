@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listPaises">
+        <item>@string/txtEspana</item>
+        <item>@string/txtFrancia</item>
+        <item>@string/txtAlemania</item>
+        <item>@string/txtBelgica</item>
+        <item>@string/txtIrlanda</item>
+        <item>@string/txtJapon</item>
+        <item>@string/txtPortugal</item>
+        <item>@string/txtRusia</item>
+        <item>@string/txtCanada</item>
+        <item>@string/txtChina</item>
+    </string-array>
+    <string-array name="desPaises">
+
+    </string-array>
+</resources>
