@@ -5,48 +5,94 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class JuegoDeAciertos extends AppCompatActivity {
 
     String [] paises;
-    final String [] capitales = {"Madrid", "París", "Berlín","Bruselas", "Dublín", "Tokio", "Lisboa","Moscú","Ottawa","Pekín"};
+    String [] capitales;
+    String [] paisesOrd;
+    String [] capitalesOrd;
+    ImageView imagenResultado;
+    TextView paisUser;
+    TextView capUser;
+    ListView vistaListaPais;
+    ListView vistaListaCap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego_de_aciertos);
+
+        vistaListaPais = findViewById(R.id.listaPaises);
+        vistaListaCap = findViewById(R.id.listacapitales);
+        paisUser = findViewById(R.id.lblPaisUsuario);
+        capUser = findViewById(R.id.lblCapUsuario);
+        imagenResultado = findViewById(R.id.imagenResultadoPaises);
         Resources res = getResources();
+        paisesOrd = res.getStringArray(R.array.listPaises);
+        capitalesOrd = res.getStringArray(R.array.listCapitales);
+
+
         paises = res.getStringArray(R.array.listPaises);
-        ListView lista = findViewById(R.id.listaPaises);
-        getSupportFragmentManager().beginTransaction().add(R.id.fragmentPrinPaises, new PaisFragment()).commit();
-        getSupportFragmentManager().beginTransaction().add(R.id.fragmentPrinCapitales, new CapitalFragment()).commit();
+        List<String> listaDes = Arrays.asList(paises);
+        Collections.shuffle(listaDes);
+        ArrayAdapter <String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listaDes);
+        vistaListaPais.setAdapter(adaptador);
+
+        capitales = res.getStringArray(R.array.listCapitales);
+        listaDes = Arrays.asList(capitales);
+        Collections.shuffle(listaDes);
+        adaptador=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,listaDes);
+        vistaListaCap.setAdapter(adaptador);
+
+        vistaListaPais.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                paisUser.setText(vistaListaPais.getItemAtPosition(position).toString());
+            }
+        });
+
+        vistaListaCap.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                capUser.setText(vistaListaCap.getItemAtPosition(position).toString());
+            }
+        });
     }
 
     public void verificarPaisCap(View view) {
-        final TextView paisUser = findViewById(R.id.lblPaisUsuario);
-        final TextView capUser = findViewById(R.id.lblCapUsuario);
-        final ImageView imagenResultado = findViewById(R.id.imagenResultadoPaises);
         String pais = paisUser.getText().toString();
         String cap = capUser.getText().toString();
         int indicePais=-1;
-        int indiceCap=-1;
-        for(int i=0; i<paises.length;i++){
-            if(paises[i].equals(pais)){
-                indicePais=i;
+        int indiceCap=-2;
+        if(paisUser.getText().toString().isEmpty()||capUser.getText().toString().isEmpty()){
+            Toast.makeText(this, "No ha introducido correctamente el país o la capital", Toast.LENGTH_SHORT).show();
+        }else {
+            for (int i = 0; i < paisesOrd.length; i++) {
+                if (paisesOrd[i].equals(pais)) {
+                    indicePais = i;
+                }
             }
-        }
-        for(int i=0; i<capitales.length;i++){
-            if(capitales[i].equals(cap)){
-                indiceCap=i;
+            for (int i = 0; i < capitalesOrd.length; i++) {
+                if (capitalesOrd[i].equals(cap)) {
+                    indiceCap = i;
+                }
             }
-        }
-        if(indiceCap==indicePais){
-            imagenResultado.setImageResource(R.drawable.acierto);
-        }else{
-            imagenResultado.setImageResource(R.drawable.error);
+            if (indiceCap == indicePais) {
+                imagenResultado.setImageResource(R.drawable.ic_acierto);
+            } else {
+                imagenResultado.setImageResource(R.drawable.ic_error);
+            }
         }
     }
 

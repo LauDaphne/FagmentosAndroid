@@ -45,6 +45,7 @@
     <Button
         android:id="@+id/bttnDesplazarImagenes"
         style="@style/BotonesIniciales"
+        android:onClick="iniciarActivityMascotas"
         android:drawableTop="@drawable/pets"
         android:text="@string/txtBttnPrnMascotas"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,6 +56,7 @@
     <Button
         android:id="@+id/bttnElegirImagen"
         style="@style/BotonesIniciales"
+        android:onClick="iniciarActivityFlores"
         android:drawableTop="@drawable/flower"
         android:text="@string/txtBttnPrnFlores"
         app:layout_constraintBottom_toBottomOf="@+id/bttnDesplazarImagenes"

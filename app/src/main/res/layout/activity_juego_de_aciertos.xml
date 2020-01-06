@@ -9,36 +9,47 @@
     tools:context=".JuegoDeAciertos">
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/lblCapSelec"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentPrinCapitales"
+        app:layout_constraintStart_toStartOf="@+id/fragmentPrinCapitales"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentPrinCapitales" />
+
+    <TextView
         android:id="@+id/tituloPaises"
         style="@style/Titulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/txtBttnPrnPaises"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/descripPaises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="@string/txtExplAciertos"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="@+id/tituloPaises"
+        app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="@+id/tituloPaises"
-        app:layout_constraintTop_toBottomOf="@+id/tituloPaises" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/lblPaisUsuario"
         android:layout_width="wrap_content"
-        android:layout_height="27dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/fragmentPrinPaises"
         app:layout_constraintStart_toStartOf="@+id/fragmentPrinPaises"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentPrinPaises" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/lblCapUsuario"
@@ -53,29 +64,32 @@
         android:id="@+id/bttnVerificar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:onClick="verificarPaisCap"
         android:text="@string/txtBttnVerifPaises"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPaisUsuario" />
 
     <ImageView
         android:id="@+id/imagenResultadoPaises"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/activityPaises"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttnVerificar"
         app:srcCompat="@android:drawable/menuitem_background" />
 
     <fragment
         android:id="@+id/fragmentPrinPaises"
         android:name="com.example.fagmentosandroid.PaisFragment"
-        android:layout_width="120dp"
-        android:layout_height="250dp"
+        style="@style/FragmentoLista"
         app:layout_constraintBottom_toBottomOf="@+id/fragmentPrinCapitales"
         app:layout_constraintEnd_toStartOf="@+id/fragmentPrinCapitales"
         app:layout_constraintHorizontal_bias="0.5"
@@ -85,12 +99,31 @@
     <fragment
         android:id="@+id/fragmentPrinCapitales"
         android:name="com.example.fagmentosandroid.CapitalFragment"
-        android:layout_width="120dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="24dp"
+        style="@style/FragmentoLista"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragmentPrinPaises"
         app:layout_constraintTop_toBottomOf="@+id/descripPaises" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/lblPaisSelec"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentPrinPaises"
+        app:layout_constraintStart_toStartOf="@+id/fragmentPrinPaises"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentPrinPaises" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPaises"
+        app:srcCompat="@drawable/ic_diana" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

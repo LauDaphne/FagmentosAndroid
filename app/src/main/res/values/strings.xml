@@ -2,16 +2,22 @@
     <string name="app_name">FragmentosAndroid</string>
     <string name="txtBttnPrnPrimos">Números Primos</string>
     <string name="txtBttnPrnPaises">Juego de aciertos</string>
-    <string name="txtBttnPrnMascotas">Mascotas</string>
-    <string name="txtBttnPrnFlores">Flores</string>
+    <string name="txtBttnPrnMascotas">Desplazando imágenes</string>
+    <string name="txtBttnPrnFlores">Seleccionando imágenes</string>
     <string name="txtNumero">Número:</string>
     <string name="txtBttnCalculaPrimo">Calcular</string>
     <string name="txtExplPrimo">Introduce un número entero y comprueba si es un número primo o no.</string>
     <string name="solucionInicio">El número</string>
     <string name="solucionPrimo">, ES un número primo</string>
     <string name="solucionNoPrimo">, NO es un número primo</string>
-    <string name="txtExplAciertos">Selecciona un pais y su correspondiente capital.</string>
+    <string name="txtExplAciertos">Selecciona un país y su correspondiente capital.</string>
     <string name="txtBttnVerifPaises">Verificar</string>
+    <string name="lblPaisSelec">País seleccionado:</string>
+    <string name="lblCapSelec">Capital seleccionada:</string>
+    <string name="txtBttnRosa">Rosa</string>
+    <string name="txtBttnTulipan">Tulipán</string>
+    <string name="txtBttnClavel">Clavel</string>
+    <string name="txtBttnAzahar">Azahar</string>
 
     <string name="txtEspana">España</string>
     <string name="txtFrancia">Francia</string>
@@ -23,5 +29,19 @@
     <string name="txtRusia">Rusia</string>
     <string name="txtCanada">Canadá</string>
     <string name="txtChina">China</string>
+
+    <string name="txtMadrid">Madrid</string>
+    <string name="txtParis">París</string>
+    <string name="txtBerlin">Berlín</string>
+    <string name="txtBruselas">Bruselas</string>
+    <string name="txtDublin">Dublín</string>
+    <string name="txtTokio">Tokio</string>
+    <string name="txtLisboa">Lisboa</string>
+    <string name="txtMoscu">Moscú</string>
+    <string name="txtOttawa">Ottawa</string>
+    <string name="txtPekin">Pekín</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -25,4 +25,14 @@ public class MainActivity extends AppCompatActivity {
         intentBoton= new Intent(this, JuegoDeAciertos.class);
         startActivity(intentBoton);
     }
+
+    public void iniciarActivityMascotas(View view) {
+        intentBoton= new Intent(this, DesplazandoImagenes.class);
+        startActivity(intentBoton);
+    }
+
+    public void iniciarActivityFlores(View view) {
+        intentBoton= new Intent(this, SeleccionandoImagenes.class);
+        startActivity(intentBoton);
+    }
 }

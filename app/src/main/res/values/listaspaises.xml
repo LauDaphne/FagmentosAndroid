@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="listPaises">
         <item>@string/txtEspana</item>
         <item>@string/txtFrancia</item>
@@ -12,7 +13,18 @@
         <item>@string/txtCanada</item>
         <item>@string/txtChina</item>
     </string-array>
-    <string-array name="desPaises">
 
+    <string-array name="listCapitales">
+        <item>@string/txtMadrid</item>
+        <item>@string/txtParis</item>
+        <item>@string/txtBerlin</item>
+        <item>@string/txtBruselas</item>
+        <item>@string/txtDublin</item>
+        <item>@string/txtTokio</item>
+        <item>@string/txtLisboa</item>
+        <item>@string/txtMoscu</item>
+        <item>@string/txtOttawa</item>
+        <item>@string/txtPekin</item>
     </string-array>
+
 </resources>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="anchoboton">140dp</dimen>
-    <dimen name="altoboton">120dp</dimen>
-    <dimen name="sizeTitulo">45dp</dimen>
+    <dimen name="anchobotonPrin">140dp</dimen>
+    <dimen name="altobotonPrin">140dp</dimen>
+    <dimen name="sizeTitulo">40dp</dimen>
     <dimen name="text_margin">16dp</dimen>
-    <dimen name="altoFragList">100dp</dimen>
-    <dimen name="anchoFragList">300dp</dimen>
-    <dimen name="anchoIcono">80dp</dimen>
-    <dimen name="altoIcono">80dp</dimen>
+    <dimen name="altoFragList">200dp</dimen>
+    <dimen name="anchoFragList">100dp</dimen>
+    <dimen name="anchoIcono">50dp</dimen>
+    <dimen name="altoIcono">50dp</dimen>
 </resources>
