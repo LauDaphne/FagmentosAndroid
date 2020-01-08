@@ -2,10 +2,17 @@
 <resources>
     <dimen name="anchobotonPrin">140dp</dimen>
     <dimen name="altobotonPrin">140dp</dimen>
+    <dimen name="anchoImagenPrin">350dp</dimen>
+    <dimen name="altoImagenPrin">291dp</dimen>
     <dimen name="sizeTitulo">40dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="altoFragList">200dp</dimen>
     <dimen name="anchoFragList">100dp</dimen>
     <dimen name="anchoIcono">50dp</dimen>
     <dimen name="altoIcono">50dp</dimen>
+    <dimen name="margenDe24">24dp</dimen>
+    <dimen name="margenDe16">16dp</dimen>
+    <dimen name="margenDe8">8dp</dimen>
+    <dimen name="anchoNumeroPrimo">100dp</dimen>
+    <dimen name="altoNumeroPrimo">40dp</dimen>
 </resources>

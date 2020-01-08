@@ -23,52 +23,52 @@
         android:id="@+id/lblNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenDe24"
         android:text="@string/txtNumero"
-        app:layout_constraintStart_toStartOf="@+id/lblTituloPrimo"
-        app:layout_constraintTop_toBottomOf="@+id/lblDescripActivity" />
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroUsuario"
+        app:layout_constraintTop_toTopOf="@+id/imagenNumPrimo" />
 
     <EditText
         android:id="@+id/txtNumeroUsuario"
-        android:layout_width="@dimen/anchoNumeroPrimo"
-        android:layout_height="@dimen/altoNumeroPrimo"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="number"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="@id/lblNumero"
+        app:layout_constraintEnd_toEndOf="@+id/lblDescripActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagenNumPrimo"
         app:layout_constraintTop_toBottomOf="@id/lblNumero" />
 
     <Button
         android:id="@+id/bttnCalcularPrimo"
         style="@style/BotonesBasicos"
-        android:layout_marginTop="@dimen/margenDe24"
         android:onClick="calcularPrimo"
         android:text="@string/txtBttnCalculaPrimo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenNumPrimo"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumeroUsuario"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroUsuario"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroUsuario" />
 
     <ImageButton
         android:id="@+id/imagenNumPrimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenDe24"
         android:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloPrimo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblNumero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/lblDescripActivity"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescripActivity"
         app:srcCompat="@drawable/ic_abaco" />
 
     <TextView
         android:id="@+id/lblDescripActivity"
-        android:layout_width="343dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
         android:text="@string/txtExplPrimo"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenNumPrimo" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloPrimo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@
         android:id="@+id/lblCapital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenDe24"
+        android:layout_marginTop="8dp"
         android:text="@string/lblCapSelec"
         app:layout_constraintEnd_toEndOf="@+id/fragmentPrinCapitales"
         app:layout_constraintStart_toStartOf="@+id/fragmentPrinCapitales"
@@ -23,7 +23,6 @@
         style="@style/Titulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenDe24"
         android:text="@string/txtBttnPrnPaises"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="@+id/tituloPaises"
         app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="@+id/tituloPaises"
-        app:layout_constraintTop_toBottomOf="@+id/imageAcierto" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloPaises" />
 
     <TextView
         android:id="@+id/lblPaisUsuario"
@@ -63,26 +62,27 @@
     <Button
         android:id="@+id/bttnVerificar"
         style="@style/BotonesBasicos"
-        android:layout_marginTop="@dimen/margenDe16"
         android:onClick="verificarPaisCap"
         android:text="@string/txtBttnVerifPaises"
+        app:layout_constraintBottom_toTopOf="@+id/imagenResultadoPaises"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblPaisUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/imageAcierto" />
 
     <ImageView
         android:id="@+id/imagenResultadoPaises"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/margenDe8"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="@dimen/margenDe8"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttnVerificar"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/menuitem_background" />
 
     <fragment
@@ -109,7 +109,7 @@
         android:id="@+id/lblPais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenDe24"
+        android:layout_marginTop="8dp"
         android:text="@string/lblPaisSelec"
         app:layout_constraintEnd_toEndOf="@+id/fragmentPrinPaises"
         app:layout_constraintStart_toStartOf="@+id/fragmentPrinPaises"
@@ -119,10 +119,11 @@
         android:id="@+id/imageAcierto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bttnVerificar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloPaises"
+        app:layout_constraintTop_toBottomOf="@+id/descripPaises"
         app:srcCompat="@drawable/ic_diana" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

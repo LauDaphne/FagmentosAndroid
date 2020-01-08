@@ -13,6 +13,12 @@
         <item name="android:layout_height">@dimen/altobotonPrin</item>
         <item name="android:backgroundTint">@color/colorFondoBttn</item>
     </style>
+    <style name="BotonesBasicos" parent="AppTheme">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorFondoBttn</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
     <style name="Titulos" parent="AppTheme">
         <item name="android:textSize">@dimen/sizeTitulo</item>
         <item name="android:fontFamily">sans-serif-black</item>

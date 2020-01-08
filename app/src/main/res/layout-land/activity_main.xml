@@ -17,52 +17,56 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/principal" />
 
     <Button
         android:id="@+id/bttnPrimo"
-        android:onClick="iniciarActivityPrimos"
         style="@style/BotonesIniciales"
         android:drawableTop="@drawable/botonprimo"
+        android:onClick="iniciarActivityPrimos"
         android:text="@string/txtBttnPrnPrimos"
-        app:layout_constraintEnd_toStartOf="@+id/bttnPaises"
-        app:layout_constraintStart_toStartOf="@+id/imagenPrincipal"
-        app:layout_constraintTop_toBottomOf="@+id/imagenPrincipal" />
+        app:layout_constraintBottom_toTopOf="@+id/bttnDesplazarImagenes"
+        app:layout_constraintEnd_toStartOf="@+id/imagenPrincipal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bttnPaises"
         style="@style/BotonesIniciales"
-        android:onClick="iniciarActivityPaises"
         android:drawableTop="@drawable/ic_botonpaises"
+        android:onClick="iniciarActivityPaises"
         android:text="@string/txtBttnPrnPaises"
         app:layout_constraintBottom_toTopOf="@+id/bttnElegirImagen"
-        app:layout_constraintEnd_toEndOf="@+id/imagenPrincipal"
-        app:layout_constraintStart_toEndOf="@+id/bttnPrimo"
-        app:layout_constraintTop_toTopOf="@+id/bttnPrimo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagenPrincipal"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bttnDesplazarImagenes"
         style="@style/BotonesIniciales"
-        android:onClick="iniciarActivityMascotas"
         android:drawableTop="@drawable/pets"
+        android:onClick="iniciarActivityMascotas"
         android:text="@string/txtBttnPrnMascotas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bttnPrimo"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/bttnPrimo"
         app:layout_constraintTop_toBottomOf="@+id/bttnPrimo" />
 
     <Button
         android:id="@+id/bttnElegirImagen"
         style="@style/BotonesIniciales"
-        android:onClick="iniciarActivityFlores"
         android:drawableTop="@drawable/flower"
+        android:onClick="iniciarActivityFlores"
         android:text="@string/txtBttnPrnFlores"
-        app:layout_constraintBottom_toBottomOf="@+id/bttnDesplazarImagenes"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bttnPaises"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/bttnPaises"
-        app:layout_constraintTop_toTopOf="@+id/bttnDesplazarImagenes" />
+        app:layout_constraintTop_toBottomOf="@+id/bttnPaises" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
