@@ -2,65 +2,57 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityFlores"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorFondoPrincipal"
     tools:context=".SeleccionandoImagenes">
 
     <Button
-        android:id="@+id/button"
-        android:onClick="seleccionarRosa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:id="@+id/bttnRosa"
+        style="@style/BotonesBasicos"
+        android:layout_marginTop="@dimen/margenDe24"
         android:text="@string/txtBttnRosa"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/bttnAzahar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragmentFlores" />
 
     <Button
-        android:id="@+id/button2"
-        android:onClick="seleccionarAzahar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bttnAzahar"
+        style="@style/BotonesBasicos"
         android:text="@string/txtBttnAzahar"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/bttnRosa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/bttnRosa"
+        app:layout_constraintTop_toTopOf="@+id/bttnRosa" />
 
     <Button
-        android:id="@+id/button3"
-        android:onClick="seleccionarTulipan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bttnTulipan"
+        style="@style/BotonesBasicos"
         android:text="@string/txtBttnTulipan"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintBottom_toBottomOf="@+id/bttnClavel"
+        app:layout_constraintEnd_toStartOf="@+id/bttnClavel"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toTopOf="@+id/bttnClavel" />
 
     <Button
-        android:id="@+id/button4"
-        android:onClick="seleccionarClavel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bttnClavel"
+        style="@style/BotonesBasicos"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:text="@string/txtBttnClavel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/bttnTulipan"
+        app:layout_constraintTop_toBottomOf="@+id/bttnAzahar"
         app:layout_constraintVertical_bias="0.294" />
 
-    <fragment
+    <FrameLayout
         android:id="@+id/fragmentFlores"
-        android:name="com.example.fagmentosandroid.RosaFragment"
         android:layout_width="407dp"
         android:layout_height="310dp"
         android:layout_marginTop="16dp"

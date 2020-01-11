@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidSnippets</string>
+    <string name="lblCapSelec">Capital sélectionné :</string>
+    <string name="lblPaisSelec">Pays sélectionné:</string>
+    <string name="solucionInicio">Le nombre</string>
+    <string name="solucionNoPrimo">, CE n\'est pas un nombre</string>
+    <string name="solucionPrimo">, EST un nombre premier</string>
+    <string name="txtAlemania">Allemagne</string>
+    <string name="txtBelgica">Belgique</string>
+    <string name="txtBerlin">Berlin</string>
+    <string name="txtBruselas">Bruxelles</string>
+    <string name="txtBttnAzahar">Oranger</string>
+    <string name="txtBttnCalculaPrimo">Calculer</string>
+    <string name="txtBttnClavel">Oeillet</string>
+    <string name="txtBttnPrnFlores">Sélection d\'images</string>
+    <string name="txtBttnPrnMascotas">Images en mouvement</string>
+    <string name="txtBttnPrnPaises">Jeu de Hit</string>
+    <string name="txtBttnPrnPrimos">Nombres premiers</string>
+    <string name="txtBttnRosa">Rose</string>
+    <string name="txtBttnTulipan">Tulipe</string>
+    <string name="txtBttnVerifPaises">Vérifier</string>
+    <string name="txtCanada">Canada</string>
+    <string name="txtChina">Chine</string>
+    <string name="txtDublin">Dublin</string>
+    <string name="txtEspana">Espagne</string>
+    <string name="txtExplAciertos">Sélectionnez un pays et son capital correspondant.</string>
+    <string name="txtExplPrimo">Entrez un entier et vérifiez s\'il s\'agit d\'un numéro de choix ou non.</string>
+    <string name="txtFrancia">France</string>
+    <string name="txtIrlanda">Irlande</string>
+    <string name="txtJapon">Japon</string>
+    <string name="txtLisboa">Lisbonne</string>
+    <string name="txtMadrid">Madrid</string>
+    <string name="txtMoscu">Moscou</string>
+    <string name="txtNumero">Nombre:</string>
+    <string name="txtOttawa">Ottawa</string>
+    <string name="txtParis">Paris</string>
+    <string name="txtPekin">Beijing</string>
+    <string name="txtPortugal">Portugal</string>
+    <string name="txtRusia">Russie</string>
+    <string name="txtTokio">Tokyo</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidFragment</string>
+    <string name="lblCapSelec">Selected capital:</string>
+    <string name="lblPaisSelec">Selected country:</string>
+    <string name="solucionInicio">The number</string>
+    <string name="solucionNoPrimo">, NOT a prime number</string>
+    <string name="solucionPrimo">, IS a prime number</string>
+    <string name="txtAlemania">Germany</string>
+    <string name="txtBelgica">Belgium</string>
+    <string name="txtBerlin">Berlin</string>
+    <string name="txtBruselas">Brussels</string>
+    <string name="txtBttnAzahar">Orange blossom</string>
+    <string name="txtBttnCalculaPrimo">Calculate</string>
+    <string name="txtBttnClavel">Carnation</string>
+    <string name="txtBttnPrnFlores">Selecting images</string>
+    <string name="txtBttnPrnMascotas">Moving images</string>
+    <string name="txtBttnPrnPaises">Hit game</string>
+    <string name="txtBttnPrnPrimos">Prime Numbers</string>
+    <string name="txtBttnRosa">Rose</string>
+    <string name="txtBttnTulipan">Tulip</string>
+    <string name="txtBttnVerifPaises">Verify</string>
+    <string name="txtCanada">Canada</string>
+    <string name="txtChina">China</string>
+    <string name="txtDublin">Dublin</string>
+    <string name="txtEspana">Spain</string>
+    <string name="txtExplAciertos">Select a country and its corresponding capital.</string>
+    <string name="txtExplPrimo">Enter an integer and check whether it is a prime number or not.</string>
+    <string name="txtFrancia">France</string>
+    <string name="txtIrlanda">Ireland</string>
+    <string name="txtJapon">Japan</string>
+    <string name="txtLisboa">Lisbon</string>
+    <string name="txtMadrid">Madrid</string>
+    <string name="txtMoscu">Moscow</string>
+    <string name="txtNumero">Number:</string>
+    <string name="txtOttawa">Ottawa</string>
+    <string name="txtParis">Paris</string>
+    <string name="txtPekin">Beijing</string>
+    <string name="txtPortugal">Portugal</string>
+    <string name="txtRusia">Russia</string>
+    <string name="txtTokio">Tokyo</string>
+</resources>
