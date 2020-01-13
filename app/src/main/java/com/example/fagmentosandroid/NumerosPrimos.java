@@ -13,6 +13,7 @@ public class NumerosPrimos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros_primos);
+        setTitle(R.string.txtBttnPrnPrimos);
     }
 
     public void calcularPrimo(View view) {

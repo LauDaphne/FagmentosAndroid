@@ -1,9 +1,6 @@
 package com.example.fagmentosandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +18,7 @@ public class SeleccionandoImagenes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seleccionando_imagenes);
+        setTitle(R.string.txtBttnPrnFlores);
 
         bttnRosa = findViewById(R.id.bttnRosa);
         bttnAzahar = findViewById(R.id.bttnAzahar);

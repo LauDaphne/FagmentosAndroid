@@ -32,6 +32,7 @@ public class JuegoDeAciertos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego_de_aciertos);
+        setTitle(R.string.txtBttnPrnPaises);
 
         vistaListaPais = findViewById(R.id.listaPaises);
         vistaListaCap = findViewById(R.id.listacapitales);

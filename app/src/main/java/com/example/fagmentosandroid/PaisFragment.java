@@ -1,8 +1,5 @@
 package com.example.fagmentosandroid;
 
-
-import android.R.layout;
-import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,14 +7,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import static android.R.layout.simple_list_item_1;
 
 
 /**
